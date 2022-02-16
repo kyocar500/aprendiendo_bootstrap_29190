@@ -5,11 +5,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.alphacoders.com/608/608824.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        .background-transparent {
+            background-color: transparent !important;
+        }
+        
+        .hero-text {
+            display: inline-block;
+            width: fit-content;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 2rem;
+            margin: auto;
+        }
+        
+        .background-white {
+            background-color: white !important;
+        }
+        
+        .fixed-top {
+            position: fixed;
+            top: 0;
+        }
+        
+        .fixed-theme {
+            transition: 0.5s;
+        }
+        
+        .brand-text {
+            border: 2px dotted aliceblue;
+            padding: 1rem;
+        }
+        
+        .nav-item-element:hover {
+            background-color: #073b49 !important;
+        }
+        
+        .nav-item-element a:hover {
+            color: aliceblue !important;
+        }
+        
+        .text-justify {
+            text-align: justify;
+        }
+        
+        .full-height {
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- ToDo Manejo del background en dispositivos moviles-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="customNavbar">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand mb-0 h1 text-white brand-text">My Brand Name</a>
+                <button class="navbar-toggler background-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
+
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto flex-nowrap align-items-center">
+                        <li class="nav-item nav-item-element">
+                            <a href="# " class="nav-link m-2 menu-item nav-active text-white">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item nav-item-element">
+                            <a href="# " class="nav-link m-2 menu-item text-white">Productos</a>
+                        </li>
+                        <li class="nav-item nav-item-element">
+                            <a href="# " class="nav-link m-2 menu-item text-white">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item nav-item-element">
+                            <a href="# " class="nav-link m-2 menu-item text-white">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-text">
+            <h1 class="text-white text-center">Hola Mundo!</h1>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <section class="row pt-5">
+
+            <div class="col-md-12">
+                <h1 class="text-center">Sobre nosotros</h1>
+            </div>
+
+            <div class="col-12 col-md-4 pt-4 align-self-start">
+                <h3 class="text-center text-primary text-uppercase">Misión</h3>
+                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit quam nostrum facere pariatur iste! Amet pariatur aperiam ipsam rem fugiat dolor, necessitatibus sunt architecto, voluptas nihil quos veritatis saepe possimus
+                    aliquam obcaecati, ad nesciunt eveniet incidunt quisquam omnis blanditiis sapiente. Delectus, animi doloremque! Quo, ducimus esse. Consequatur neque, atque cupiditate nesciunt explicabo temporibus accusantium adipisci quas, doloremque
+                    facere voluptatibus architecto, exercitationem debitis. Commodi corporis dolorem quam id, ipsum distinctio? Delectus itaque officiis optio officia, assumenda laudantium veritatis sit accusantium?</p>
+            </div>
+
+            <div class="col-12 col-md-4 pt-4 align-self-start">
+                <h3 class="text-center text-primary text-uppercase">Visión</h3>
+                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo praesentium reprehenderit expedita corrupti harum nostrum deserunt, aliquam iure sit molestias qui numquam aspernatur dolorem at quasi ad suscipit fuga officiis molestiae consectetur
+                    enim iusto dolores! Odit enim ullam iure culpa cupiditate velit omnis, aliquam veniam quae dolore aspernatur voluptatum at ipsa nobis, aut corrupti dolores unde. Ut inventore possimus aliquid nam magnam sunt illo atque maiores, pariatur
+                    doloremque a fugiat nihil ad quis neque, voluptatibus quibusdam! Error excepturi quisquam fugiat!</p>
+            </div>
+
+            <div class="col-12 col-md-4 pt-4 align-self-start">
+                <h3 class="text-center text-primary text-uppercase">Valores</h3>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore id possimus at unde explicabo molestias. Enim quia sequi modi eaque corporis esse quas ea quibusdam blanditiis, laudantium quasi, optio quod doloremque cupiditate
+                    sunt molestias eum in. Numquam quibusdam, tenetur odit aut eum ipsam nulla totam architecto doloremque, aliquam eius amet magni recusandae sunt pariatur. Omnis voluptatibus sunt nobis inventore fugit officia eos quod atque consectetur,
+                    accusamus quasi odit. Ad accusantium officia explicabo modi rerum placeat eum. Expedita, laboriosam dolorem!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <script>
+        window.onscroll = function() {
+            // Llama a la funcion al hacer scroll
+            scrollable();
+        }
+
+        function scrollable() {
+            var y = 0;
+            var currentY = window.pageYOffset;
+
+            if (y < currentY) {
+                document.querySelector('#customNavbar').classList.remove('background-transparent', 'fixed-theme');
+                document.querySelector('#customNavbar').classList.add('navbar-dark', 'bg-dark', 'fixed-theme');
+            } else if (y == currentY) {
+                document.querySelector('#customNavbar').classList.remove('navbar-dark', 'bg-dark', 'fixed-theme');
+                document.querySelector('#customNavbar').classList.add('background-transparent', 'fixed-theme');
+            }
+            // Original Code
+            // if (y < currentY) {
+            //     document.querySelector('#customNavbar').classList.remove('navbar-light', 'bg-light', 'fixed-theme');
+            //     document.querySelector('#customNavbar').classList.add('navbar-dark', 'bg-dark', 'fixed-theme');
+            // } else if (y == currentY) {
+            //     document.querySelector('#customNavbar').classList.remove('navbar-dark', 'bg-dark', 'fixed-theme');
+            //     document.querySelector('#customNavbar').classList.add('navbar-light', 'bg-light', 'fixed-theme');
+            // }
+
+        }
+
+        // Ejecuta la funcion en cualquier momento por si no se inicia la web en el top
+        scrollable();
+    </script>
 </body>
 
 </html>
