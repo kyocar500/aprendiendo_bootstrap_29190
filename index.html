@@ -7,73 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
-    <style>
-        * {
-            border: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .header {
-            width: 100%;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.alphacoders.com/608/608824.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-        
-        .background-transparent {
-            background-color: transparent !important;
-        }
-        
-        .hero-text {
-            display: inline-block;
-            width: fit-content;
-            background-color: rgba(255, 255, 255, 0.3);
-            padding: 2rem;
-            margin: auto;
-        }
-        
-        .background-white {
-            background-color: white !important;
-        }
-        
-        .fixed-top {
-            position: fixed;
-            top: 0;
-        }
-        
-        .fixed-theme {
-            transition: 0.5s;
-        }
-        
-        .brand-text {
-            border: 2px dotted aliceblue;
-            padding: 1rem;
-        }
-        
-        .nav-item-element:hover {
-            background-color: #073b49 !important;
-        }
-        
-        .nav-item-element a:hover {
-            color: aliceblue !important;
-        }
-        
-        .text-justify {
-            text-align: justify;
-        }
-        
-        .full-height {
-            height: 100vh;
-        }
-    </style>
 </head>
 
 <body>
@@ -81,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="customNavbar">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand mb-0 h1 text-white brand-text">My Brand Name</a>
+                <a href="#" class="navbar-brand mb-0 h1 text-white brand-text">Nombre Hotel</a>
                 <button class="navbar-toggler background-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -90,10 +25,10 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto flex-nowrap align-items-center">
                         <li class="nav-item nav-item-element">
-                            <a href="# " class="nav-link m-2 menu-item nav-active text-white">Sobre nosotros</a>
+                            <a href="#sobre-nosotros" class="nav-link m-2 menu-item nav-active text-white">Sobre nosotros</a>
                         </li>
                         <li class="nav-item nav-item-element">
-                            <a href="# " class="nav-link m-2 menu-item text-white">Productos</a>
+                            <a href="#seccion-precios" class="nav-link m-2 menu-item text-white">Precios</a>
                         </li>
                         <li class="nav-item nav-item-element">
                             <a href="# " class="nav-link m-2 menu-item text-white">Preguntas frecuentes</a>
@@ -111,35 +46,247 @@
         </div>
     </header>
 
+    <!-- Se abre container-->
     <div class="container-fluid">
-        <section class="row pt-5">
-
-            <div class="col-md-12">
-                <h1 class="text-center">Sobre nosotros</h1>
-            </div>
-
+        <!-- Seccion de informacion -->
+        <section class="row pt-5 full-height beach-background" id="sobre-nosotros">
+            <h1 class="text-center text-white">Sobre Nosotros</h1>
             <div class="col-12 col-md-4 pt-4 align-self-start">
-                <h3 class="text-center text-primary text-uppercase">Misión</h3>
-                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit quam nostrum facere pariatur iste! Amet pariatur aperiam ipsam rem fugiat dolor, necessitatibus sunt architecto, voluptas nihil quos veritatis saepe possimus
+                <h3 class="text-center text-white text-uppercase ">Misión</h3>
+                <p class="text-justify text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit quam nostrum facere pariatur iste! Amet pariatur aperiam ipsam rem fugiat dolor, necessitatibus sunt architecto, voluptas nihil quos veritatis saepe possimus
                     aliquam obcaecati, ad nesciunt eveniet incidunt quisquam omnis blanditiis sapiente. Delectus, animi doloremque! Quo, ducimus esse. Consequatur neque, atque cupiditate nesciunt explicabo temporibus accusantium adipisci quas, doloremque
                     facere voluptatibus architecto, exercitationem debitis. Commodi corporis dolorem quam id, ipsum distinctio? Delectus itaque officiis optio officia, assumenda laudantium veritatis sit accusantium?</p>
             </div>
 
-            <div class="col-12 col-md-4 pt-4 align-self-start">
-                <h3 class="text-center text-primary text-uppercase">Visión</h3>
-                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo praesentium reprehenderit expedita corrupti harum nostrum deserunt, aliquam iure sit molestias qui numquam aspernatur dolorem at quasi ad suscipit fuga officiis molestiae consectetur
+            <div class="col-12 col-md-4 pt-4 align-self-start ">
+                <h3 class="text-center text-white text-uppercase ">Visión</h3>
+                <p class="text-justify text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo praesentium reprehenderit expedita corrupti harum nostrum deserunt, aliquam iure sit molestias qui numquam aspernatur dolorem at quasi ad suscipit fuga officiis molestiae consectetur
                     enim iusto dolores! Odit enim ullam iure culpa cupiditate velit omnis, aliquam veniam quae dolore aspernatur voluptatum at ipsa nobis, aut corrupti dolores unde. Ut inventore possimus aliquid nam magnam sunt illo atque maiores, pariatur
                     doloremque a fugiat nihil ad quis neque, voluptatibus quibusdam! Error excepturi quisquam fugiat!</p>
             </div>
 
-            <div class="col-12 col-md-4 pt-4 align-self-start">
-                <h3 class="text-center text-primary text-uppercase">Valores</h3>
-                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore id possimus at unde explicabo molestias. Enim quia sequi modi eaque corporis esse quas ea quibusdam blanditiis, laudantium quasi, optio quod doloremque cupiditate
+            <div class="col-12 col-md-4 pt-4 align-self-start ">
+                <h3 class="text-center text-white text-uppercase ">Valores</h3>
+                <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore id possimus at unde explicabo molestias. Enim quia sequi modi eaque corporis esse quas ea quibusdam blanditiis, laudantium quasi, optio quod doloremque cupiditate
                     sunt molestias eum in. Numquam quibusdam, tenetur odit aut eum ipsam nulla totam architecto doloremque, aliquam eius amet magni recusandae sunt pariatur. Omnis voluptatibus sunt nobis inventore fugit officia eos quod atque consectetur,
                     accusamus quasi odit. Ad accusantium officia explicabo modi rerum placeat eum. Expedita, laboriosam dolorem!</p>
             </div>
         </section>
+
+        <!-- Seccion de precios -->
+        <section class="row pt-5 full-height" id="seccion-precios">
+            <h1 class="text-center text-primary">Precios</h1>
+            <div class="col-12 col-md-4 pt-4">
+                <div class="card">
+                    <img src="img/habitaciones/1.jpeg" class="card-img-top" alt="Habitacion tipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-uppercase text-info">Habitación Sencilla</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor rem? Sed molestias cum quae labore dolorem iste fugiat impedit reprehenderit voluptatibus sunt, adipisci excepturi ad quidem aspernatur ipsam itaque.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$300.00</li>
+                        <li class="list-group-item text-success">Aplica pago a mensualidades</li>
+                        <li class="list-group-item text-danger">Habitaciones disponibles</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#seccion-precios" class="card-link">Reservar habitación</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 pt-4">
+                <div class="card">
+                    <img src="img/habitaciones/2.jpeg" class="card-img-top" alt="Habitacion tipo 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-uppercase text-info">Habitación Doble</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor rem? Sed molestias cum quae labore dolorem iste fugiat impedit reprehenderit voluptatibus sunt, adipisci excepturi ad quidem aspernatur ipsam itaque.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$400.00</li>
+                        <li class="list-group-item text-success">Aplica pago a mensualidades</li>
+                        <li class="list-group-item text-success">Habitaciones disponibles</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#seccion-precios" class="card-link">Reservar habitación</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 pt-4">
+                <div class="card">
+                    <img src="img/habitaciones/3.jpeg" class="card-img-top" alt="Habitacion tipo 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-uppercase text-info">Habitación VIP</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor rem? Sed molestias cum quae labore dolorem iste fugiat impedit reprehenderit voluptatibus sunt, adipisci excepturi ad quidem aspernatur ipsam itaque.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$500.00</li>
+                        <li class="list-group-item text-success">Aplica pago a mensualidades</li>
+                        <li class="list-group-item text-success">Habitaciones disponibles</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#seccion-precios" class="card-link">Reservar habitación</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seccion de preguntas -->
+        <section class="row pt-5 full-height questions-background" id="seccion-preguntas">
+            <h1 class="text-center text-white">Preguntas frecuentes</h1>
+            <div class="col-12 col-md-6 pt-4">
+                <div class="card border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Pregunta 1</h5>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam doloribus aliquid a blanditiis! Laudantium ea itaque quae nesciunt aliquam!</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 pt-4">
+                <div class="card border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Pregunta 2</h5>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam doloribus aliquid a blanditiis! Laudantium ea itaque quae nesciunt aliquam!</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 pt-4">
+                <div class="card border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Pregunta 3</h5>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam doloribus aliquid a blanditiis! Laudantium ea itaque quae nesciunt aliquam!</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 pt-4">
+                <div class="card border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Pregunta 4</h5>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam doloribus aliquid a blanditiis! Laudantium ea itaque quae nesciunt aliquam!</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Seccion contacto -->
+        <div class="container">
+
+            <section class="row pt-5 full-height" id="seccion-preguntas">
+                <h1 class="text-center text-primary">Contacto</h1>
+                <div class="col-12 pt-4">
+                    <form>
+
+                        <div class="form-group">
+                            <!-- Full Name -->
+                            <label for="full_name_id" class="control-label">Full Name</label>
+                            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Street 1 -->
+                            <label for="street1_id" class="control-label">Street Address 1</label>
+                            <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Street 2 -->
+                            <label for="street2_id" class="control-label">Street Address 2</label>
+                            <input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- City-->
+                            <label for="city_id" class="control-label">City</label>
+                            <input type="text" class="form-control" id="city_id" name="city" placeholder="Smallville">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- State Button -->
+                            <label for="state_id" class="control-label">State</label>
+                            <select class="form-control" id="state_id">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Zip Code-->
+                            <label for="zip_id" class="control-label">Zip Code</label>
+                            <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary">Buy!</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </section>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Footer text</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Footer text</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 black-background">
+            © 2022 Copyright:
+            <a class="text-white" href="#">Hoteles AAA</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 
