@@ -1,0 +1,99 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/635365/pexels-photo-635365.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2038014/pexels-photo-2038014.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/825776/pexels-photo-825776.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.alphacoders.com/608/608824.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/wall1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.background-transparent {
+    background-color: transparent !important;
+}
+
+.hero-text {
+    display: inline-block;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    margin: auto;
+}
+
+.background-white {
+    background-color: white !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+.fixed-theme {
+    transition: 0.5s;
+}
+
+.brand-text {
+    border: 2px dotted aliceblue;
+    padding: 1rem;
+}
+
+.nav-item-element:hover {
+    background-color: #073b49 !important;
+}
+
+.nav-item-element a:hover {
+    color: aliceblue !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.beach-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/backgrounds/beach.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.questions-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/backgrounds/thinking.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/backgrounds/contact.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.black-background {
+    background-color: #000;
+}
+
+@media screen and (max-width:768px) {
+    .full-height {
+        height: auto;
+    }
+}
