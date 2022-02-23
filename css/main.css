@@ -25,6 +25,11 @@
     background-color: transparent !important;
 }
 
+.background-black-transparent {
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: black;
+}
+
 .hero-text {
     display: inline-block;
     width: fit-content;
@@ -52,7 +57,7 @@
 }
 
 .nav-item-element:hover {
-    background-color: #073b49 !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .nav-item-element a:hover {
@@ -82,18 +87,63 @@
 }
 
 .contact-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/backgrounds/contact.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #74ebd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.control-label {
+    padding: .25rem 0rem;
 }
 
 .black-background {
     background-color: #000;
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.48);
+}
+
+.map-container-7 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-7 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@media screen and (max-width:992px) {
+    .nav-item-element {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width:768px) {
     .full-height {
         height: auto;
     }
+    .nav-item-element {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        text-align: center;
+    }
+    /* .navbar-toggler:focus {
+        box-shadow: .25rem -1px 18px 9px rgba(0, 0, 0, 0.48);
+        -webkit-box-shadow: 1px -1px 18px 9px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 1px -1px 18px 9px rgba(0, 0, 0, 0.48);
+    } */
 }
