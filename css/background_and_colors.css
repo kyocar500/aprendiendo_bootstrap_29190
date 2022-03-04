@@ -1,0 +1,83 @@
+/*Variables*/
+.primary-color-text {
+  color: #1a748e;
+}
+
+.secondary-color-text {
+  color: #1a748e;
+}
+
+.light-sand-color {
+  color: #f0df99;
+}
+
+.strong-sand-color-text {
+  color: #d38e31;
+}
+
+.white-color-text {
+  color: #fff;
+}
+
+.light-purple-color-text {
+  color: #ACB6E5;
+}
+
+.sea-green-colot-text {
+  color: #74ebd5;
+}
+
+.questions-background, .beach-background, .header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/635365/pexels-photo-635365.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2038014/pexels-photo-2038014.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/825776/pexels-photo-825776.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.alphacoders.com/608/608824.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/wall1.jpg");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.beach-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/backgrounds/beach.jpeg");
+}
+
+.questions-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/backgrounds/thinking.webp");
+}
+
+.contact-background {
+  background: #ACB6E5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACB6E5, #74ebd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.black-background {
+  background-color: #000;
+}
+
+.background-white {
+  background-color: #000;
+}
+
+.background-transparent {
+  background-color: transparent !important;
+}
+
+.background-black-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=background_and_colors.css.map */

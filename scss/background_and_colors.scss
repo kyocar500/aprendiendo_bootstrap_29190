@@ -1,0 +1,106 @@
+/*Variables*/
+
+$primary-color:#1a748e;
+$secondary-color:#55c4d7;
+$light-sand:#f0df99;
+$strong-sand:#d38e31;
+$black:#242834;
+$white:#fff;
+$light-purple:#ACB6E5;
+$sea-green:#74ebd5;
+.primary-color-text {
+    color: $primary-color;
+}
+
+.secondary-color-text {
+    color: $primary-color;
+}
+
+.light-sand-color {
+    color: $light-sand;
+}
+
+.strong-sand-color-text {
+    color: $strong-sand;
+}
+
+.white-color-text {
+    color: $white;
+}
+
+.light-purple-color-text {
+    color: $light-purple;
+}
+
+.sea-green-colot-text {
+    color: $sea-green
+}
+
+@mixin set-background-image($imagePath) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url($imagePath);
+}
+
+%image-background-placement {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin set-linear-gradient-background($startColor, $endColor) {
+    background: $startColor;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $startColor, $endColor);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $startColor, $endColor);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin set-solid-color-background($color) {
+    background-color: #000;
+}
+
+.header {
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/635365/pexels-photo-635365.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/2038014/pexels-photo-2038014.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/825776/pexels-photo-825776.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://images.alphacoders.com/608/608824.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/wall1.jpg");
+    @extend %image-background-placement;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.beach-background {
+    @include set-background-image("../img/backgrounds/beach.jpeg");
+    @extend %image-background-placement;
+}
+
+.questions-background {
+    @include set-background-image("../img/backgrounds/thinking.webp");
+    @extend %image-background-placement;
+}
+
+.contact-background {
+    @include set-linear-gradient-background($light-purple,
+    $sea-green);
+}
+
+.black-background {
+    @include set-solid-color-background($black);
+}
+
+.background-white {
+    @include set-solid-color-background($white);
+}
+
+.background-transparent {
+    background-color: transparent !important;
+}
+
+.background-black-transparent {
+    background-color: rgba(0, 0, 0, 0.7);
+}
